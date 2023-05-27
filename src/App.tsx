@@ -5,6 +5,7 @@ import { useEffect } from "react";
 
 export default function App() {
   useEffect(() => {
+    // 从replit添加一行注释
     const video = document.getElementById("video") as any;
     const videoSrc =
       "https://vip.lzcdn2.com/20220318/37_8786d09c/1200k/hls/mixed.m3u8";
@@ -12,12 +13,12 @@ export default function App() {
       const hls = new Hls();
       hls.loadSource(videoSrc);
       hls.attachMedia(video);
-      hls.on(Hls.Events.MANIFEST_PARSED, function () {
+      hls.on(Hls.Events.MANIFEST_PARSED, function() {
         // video.play();
       });
     } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
       video.src = videoSrc;
-      video.addEventListener("loadedmetadata", function () {
+      video.addEventListener("loadedmetadata", function() {
         // video.play();
       });
     }
