@@ -15,7 +15,7 @@ export default function App() {
       hls.attachMedia(video);
       hls.on(Hls.Events.MANIFEST_PARSED, function() {
         // video.play();
-        video.download();
+        // video.download();
       });
     } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
       video.src = videoSrc;
