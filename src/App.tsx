@@ -7,7 +7,7 @@ export default function App() {
 
   return (
     <>
-      {/* <Video></Video> */}
+      <Video></Video>
       <EBook></EBook>
     </>
   );
