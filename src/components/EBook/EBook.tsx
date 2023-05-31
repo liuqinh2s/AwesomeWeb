@@ -1,21 +1,20 @@
-import React, { useEffect, useState } from "react";
-import ePub from "epubjs";
-
+import React, { useState } from 'react'
+import { ReactReader } from 'react-reader'
 
 export const EBook = () => {
-  let book;
-  let rendition;
-  useEffect(() => {
-    book = ePub("https://s3.amazonaws.com/moby-dick/moby-dick.epub");
-    rendition = book.renderTo("ebook-area", { width: "100%", height: "400" });
-    rendition.display();
-  })
-  return <>
-    <div id="ebook-area"></div>
-    <a id="prev" href="#prev" className="arrow" onClick={()=>{
-     book.package.metadata.direction === "rtl" ? rendition.next() : rendition.prev();
-      e.preventDefault();
-    }}>‹</a>
-    <a id="next" href="#next" className="arrow">›</a>
-  </>
+  // And your own state logic to persist state
+  const [location, setLocation] = useState(null)
+  const locationChanged = epubcifi => {
+    // epubcifi is a internal string used by epubjs to point to a location in an epub. It looks like this: epubcfi(/6/6[titlepage]!/4/2/12[pgepubid00003]/3:0)
+    setLocation(epubcifi)
+  }
+  return (
+    <div style={{ height: '100vh' }}>
+      <ReactReader
+        location={location}
+        locationChanged={locationChanged}
+        url="https://s3.amazonaws.com/moby-dick/moby-dick.epub"
+      />
+    </div>
+  )
 }

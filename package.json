@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "epubjs": "^0.3.93",
-    "hls.js": "^1.4.4"
+    "hls.js": "^1.4.4",
+    "react-reader": "^1.2.1"
   }
 }
