@@ -8,10 +8,10 @@
 
 能阅读作品
 
-视频播放用：hls.js
-电子书阅读用：react-reader
-图片展示用原生html
-音乐，播客，rss暂时未定
+- 视频播放用：hls.js
+- 电子书阅读用：react-reader
+- 图片展示用原生html
+- 音乐，播客，rss暂时未定
 
 ### 第二步
 
