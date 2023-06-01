@@ -1,5 +1,6 @@
 import React from "react";
-import { StarsWithScore } from '../../widgets/ScoreStars/StarsWithScore'
+import { StarsWithScore } from '../../widgets/ScoreStars/StarsWithScore';
+import './SimpleCard.less';
 
 interface ISimpleCard {
   name: string;  // 名称
@@ -10,6 +11,10 @@ interface ISimpleCard {
 export const SimpleCard = (props: ISimpleCard) => {
   const { name, cover, score } = props;
   return <>
-    <StarsWithScore score={30}></StarsWithScore>
+    <div className="simple-card">
+       <img style={{display: 'block'}} src={cover}></img>
+      <div>{name}</div>
+      <StarsWithScore score={score}></StarsWithScore>
+    </div>
   </>
 }
