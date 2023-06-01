@@ -1,0 +1,27 @@
+.category {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 18px;
+  padding: 20px 0px;
+
+  li {
+    cursor: pointer;
+  }
+
+  .active {
+    color: #ec2d7a;
+    position: relative;
+  }
+  
+  .active::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -9px;
+    width: 18px;
+    height: 2px;
+    background-color: #ec2d7a;
+  }
+}
