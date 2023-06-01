@@ -2,7 +2,7 @@ import React from "react";
 import { StarsWithScore } from '../../widgets/ScoreStars/StarsWithScore';
 import './SimpleCard.less';
 
-interface ISimpleCard {
+export interface ISimpleCard {
   name: string;  // 名称
   cover: string;  // 封面地址
   score: number;  // 评分
