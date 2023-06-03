@@ -1,24 +1,24 @@
 import React from "react";
 import { ISimpleCard, SimpleCard } from '../Card/SimpleCard'
-import './Page.less'
+import './Block.less'
 
-interface IPage {
+interface IBlock {
   data: ISimpleCard[];
 }
 
-export const Page = (props: IPage) => {
+export const Block = (props: IBlock) => {
   const { data } = props;
   const html = () => {
     let res = [];
     for (let i = 0; i < data.length; i++) {
       res.push(
-        <div className="card-wrap">
-          <SimpleCard name={data[i].name} cover={data[i].cover} score={data[i].score}></SimpleCard></div>)
+        <div key={i} className="card-wrap">
+          <SimpleCard name={data[i].name} cover={data[i].cover} score={data[i].score} id={i}></SimpleCard></div>)
     }
     return res;
   }
   return <>
-    <div className="page">
+    <div className="block">
       {html()}
     </div>
   </>

@@ -1,12 +1,16 @@
 import React, { useEffect } from "react";
 import Hls from "hls.js";
 
-export const Video = () => {
+interface IVideo {
+  source: string;  // 播放地址
+}
+
+export const Video = (props: IVideo) => {
+  const {source} = props;
   useEffect(() => {
     // 从replit添加一行注释
     const video = document.getElementById("video") as any;
-    const videoSrc =
-      "https://vip.lzcdn2.com/20220318/37_8786d09c/1200k/hls/mixed.m3u8";
+    const videoSrc =source;
     if (Hls.isSupported()) {
       const hls = new Hls();
       hls.loadSource(videoSrc);

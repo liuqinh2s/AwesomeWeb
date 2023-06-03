@@ -1,19 +1,23 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import './CategoryBar.less';
 
 interface ICategoryBar {
-  list: string[];  // 分类列表
+  list: Array<{ title: string, path: string }>;  // 分类列表
 }
 
 export const CategoryBar = (props: ICategoryBar) => {
   const { list } = props;
+  const navigate = useNavigate();
   const [index, setIndex] = useState(0);
   const li = () => {
     let res = [];
     for (let i = 0; i < list.length; i++) {
-      res.push(<li className={i === index ? 'active' : ''} onClick={() => {
+      const { title, path } = list[i]
+      res.push(<li key={i} className={i === index ? 'active' : ''} onClick={() => {
         setIndex(i);
-      }}>{list[i]}</li>)
+        navigate('/' + path)
+      }}>{title}</li>)
     }
     return res;
   }

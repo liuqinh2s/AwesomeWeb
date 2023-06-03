@@ -1,6 +1,6 @@
 export const video = [{
   name: '狼群',  // 片名
-  source: '',  // 播放源
+  source:       "https://vip.lzcdn2.com/20220318/37_8786d09c/1200k/hls/mixed.m3u8",  // 播放源
   cover: 'https://pic.rmb.bdstatic.com/bjh/4092b755ca751ae195a4f6635a041843.jpeg',  // 封面
   score: '55',  // 评分
   details: {
