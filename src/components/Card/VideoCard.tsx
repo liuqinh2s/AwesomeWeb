@@ -22,15 +22,15 @@ export const VideoCard = (props: IVideoCard) => {
         </div>
         <div className="property">
           <span className="key">{'导演 : '}</span>
-          <span className="value">{directors}</span>
+          <span className="value">{directors.join('/')}</span>
         </div>
         <div className="property">
           <span className="key">{'主演 : '}</span>
-          <span className="value">{actors}</span>
+          <span className="value">{actors.join('/')}</span>
         </div>
         <div className="property">
           <span className="key">{'类型: '}</span>
-          <span className="value">{types}</span>
+          <span className="value">{types.join('/')}</span>
         </div>
         <div className="property">
           <span className="key">{'制片国家/地区 : '}</span>
@@ -38,7 +38,7 @@ export const VideoCard = (props: IVideoCard) => {
         </div>
         <div className="property">
           <span className="key">{'又名 : '}</span>
-          <span className="value">{alias}</span>
+          <span className="value">{alias.join('/')}</span>
         </div>
         <div className="property">
           <span className="key">{'简介 : '}</span>
