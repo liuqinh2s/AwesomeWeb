@@ -10,6 +10,6 @@ export const HomePage = () => {
   console.log(params)
   return <>
     <CategoryBar list={[{ title: '视频', path: 'video' }, { title: '电子书', path: 'ebook' }, { title: '音乐', path: 'music' }, { title: '图片', path: 'picture' }, { title: '文章', path: 'article' }, { title: 'RSS', path: 'rss' }]}></CategoryBar>
-    <Block data={video}></Block>
+    <Block data={video as any}></Block>
   </>
 }
