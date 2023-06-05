@@ -2,14 +2,42 @@ import React from "react";
 import { CategoryBar } from '../../components/CategoryBar/CategoryBar'
 import { Block } from '../../components/Block/Block'
 import { useParams } from 'react-router-dom';
-import { video } from "../../data";
+import { video, category } from "../../data";
 
 
 export const HomePage = () => {
   const params = useParams();
   console.log(params)
+  const getData = () => {
+    switch (params.id) {
+      case undefined:
+      case 'video':
+        return video;
+      default:
+        return [];
+    }
+  }
+  const getIndex = () => {
+    switch (params.id) {
+      case undefined:
+      case 'video':
+        return 0;
+      case 'ebook':
+        return 1;
+      case 'music':
+        return 2;
+      case 'picture':
+        return 3;
+      case 'article':
+        return 4;
+      case 'rss':
+        return 5;
+      default:
+        return 0;
+    }
+  }
   return <>
-    <CategoryBar list={[{ title: '视频', path: 'video' }, { title: '电子书', path: 'ebook' }, { title: '音乐', path: 'music' }, { title: '图片', path: 'picture' }, { title: '文章', path: 'article' }, { title: 'RSS', path: 'rss' }]}></CategoryBar>
-    <Block data={video as any}></Block>
+    <CategoryBar list={category} index={getIndex()}></CategoryBar>
+    <Block data={getData() as any}></Block>
   </>
 }
