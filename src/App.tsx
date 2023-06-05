@@ -19,6 +19,7 @@ export default function App() {
           <Route path="/" element={<HomePage></HomePage>} />
           <Route path="/:id" element={<HomePage></HomePage>} />
           <Route path="/video/:id" element={<VideoPage></VideoPage>} />
+          <Route path="/ebook/:id" element={<EBook></EBook>} />
         </Routes>
         {/* <VideoCard data={video[0]}></VideoCard> */}
         {/* <SimpleCard name={'刻在你心底的名字'} cover={"https://pic.rmb.bdstatic.com/bjh/4092b755ca751ae195a4f6635a041843.jpeg"} score={60}></SimpleCard> */}

@@ -2,7 +2,7 @@ import React from "react";
 import { CategoryBar } from '../../components/CategoryBar/CategoryBar'
 import { Block } from '../../components/Block/Block'
 import { useParams } from 'react-router-dom';
-import { video, category } from "../../data";
+import { video, book, category } from "../../data";
 
 
 export const HomePage = () => {
@@ -13,6 +13,8 @@ export const HomePage = () => {
       case undefined:
       case 'video':
         return video;
+      case 'ebook':
+        return book;
       default:
         return [];
     }
