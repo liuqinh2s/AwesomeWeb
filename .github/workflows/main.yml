@@ -21,9 +21,17 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-      - name: Rsync Deployments Action
-        uses: Burnett01/rsync-deployments@5.2.2
+      - name: Rsync Deployments Action with ssh key and password
+  # You may pin to the exact commit or the version.
+  # uses: kroominator/rsync-deployments-simply-com@5ce1980093ab6c6f91683022597ebb0fce68c620
+        uses: kroominator/rsync-deployments-simply-com@5.2.2
         with:
+          # The switches
+          switches: -avzr --delete
+          # The remote shell argument
+          # rsh: # optional, default is 
+          # The local path
+          # path: # optional, default is 
           # The remote path
           remote_path: /usr/share/nginx/html
           # The remote host
@@ -34,4 +42,8 @@ jobs:
           remote_user: ${{ secrets.SERVER_USER }}
           # The remote key
           remote_key: ${{ secrets.SERVER_KEY }}
+          # The remote key passphrase
+          # remote_key_pass: # optional, default is 
+          # The remote password'
+          # remote_password: # optional, default is 
             
