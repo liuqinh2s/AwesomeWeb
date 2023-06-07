@@ -21,15 +21,18 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-      - name: Deploy to Server    # 第二步，推文件到服务器
-        uses: appleboy/ssh-action@master
-        env:
-          DEPLOY_KEY: ${{ secrets.SERVER_KEY }}    # 引用Github配置，SSH私钥
-          ARGS: -avz --delete --exclude='*.env' --exclude='runtime/' # rsync参数，删除服务器目录的文件，排除.env，runtime文件
-          SERVER_PORT: ${{ secrets.SERVER_PORT }}  # 引用Github配置，SSH端口,默认22
-          FOLDER: ./build # 要推送的文件夹，路径相对于代码仓库的根目录
-          SERVER_IP: ${{ secrets.SERVER_HOST }}    # 引用Github配置，服务器的host名（IP或者域名domain.com
-          SERVER_HOST: ${{ secrets.SERVER_HOST }}
-          USERNAME: ${{ secrets.SERVER_USERNAME }} # 引用Github配置，服务器登录名
-          SERVER_DESTINATION: /usr/share/nginx/html/ # 部署到服务器目标文件夹
+      - name: Rsync Deployments Action
+      - name: Rsync Deployments Action
+        uses: Burnett01/rsync-deployments@5.2.2
+        with:
+          # The remote path
+          remote_path: /usr/share/nginx/html
+          # The remote host
+          remote_host: ${{ secrets.SERVER_HOST }}
+          # The remote port
+          remote_port: ${{ secrets.SERVER_PORT }} # optional, default is 22
+          # The remote user
+          remote_user: ${{ secrets.SERVER_USER }}
+          # The remote key
+          remote_key: ${{ secrets.SERVER_KEY }}
             
