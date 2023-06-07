@@ -22,7 +22,7 @@ jobs:
       - name: Build
         run: npm run build
       - name: Deploy to Server    # 第二步，推文件到服务器
-        uses: AEnterprise/rsync-deploy@v1.0
+        uses: appleboy/ssh-action@master
         env:
           DEPLOY_KEY: ${{ secrets.SERVER_KEY }}    # 引用Github配置，SSH私钥
           ARGS: -avz --delete --exclude='*.env' --exclude='runtime/' # rsync参数，删除服务器目录的文件，排除.env，runtime文件
