@@ -22,7 +22,6 @@ jobs:
       - name: Build
         run: npm run build
       - name: Rsync Deployments Action
-      - name: Rsync Deployments Action
         uses: Burnett01/rsync-deployments@5.2.2
         with:
           # The remote path
