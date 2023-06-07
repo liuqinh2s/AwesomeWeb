@@ -7,7 +7,7 @@ export const category = [
   { title: "RSS", path: "rss" },
 ];
 
-// 测试github actions2
+// 测试github actions3
 export const video = [
   {
     name: "一九四二", // 片名
