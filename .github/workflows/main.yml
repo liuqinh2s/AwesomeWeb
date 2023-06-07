@@ -1,5 +1,4 @@
-name: Deploy Demo #工作流名称，可自定义
-# 触发条件
+name: Deploy
 on:
   push:
     branches:
@@ -8,7 +7,7 @@ on:
       - README.md
       - LICENSE
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest # 使用ubuntu系统镜像运行自动化脚本
     steps: # 自动化步骤
       - name: Checkout  # 第一步，下载代码仓库
