@@ -31,7 +31,7 @@ jobs:
           # The remote port
           remote_port: ${{ secrets.SERVER_PORT }} # optional, default is 22
           # The remote user
-          remote_user: ${{ secrets.SERVER_USER }}
+          remote_user: ${{ secrets.SERVER_USERNAME }}
           # The remote key
           remote_key: ${{ secrets.SERVER_KEY }}
             
