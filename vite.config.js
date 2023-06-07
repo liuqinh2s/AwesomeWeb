@@ -1,6 +1,6 @@
 export default {
   build: {
-    outDir: 'distro'
+    outDir: 'build'
   },
   css: {
     preprocessorOptions: {
