@@ -10,8 +10,8 @@ interface IEBook {
 export const EBook = (props: IEBook) => {
   const { source } = props;
   // And your own state logic to persist state
-  const [location, setLocation] = useState(null);
-  const locationChanged = (epubcifi: any) => {
+  const [location, setLocation] = useState('');
+  const locationChanged = (epubcifi: string) => {
     // epubcifi is a internal string used by epubjs to point to a location in an epub. It looks like this: epubcfi(/6/6[titlepage]!/4/2/12[pgepubid00003]/3:0)
     setLocation(epubcifi);
   };
