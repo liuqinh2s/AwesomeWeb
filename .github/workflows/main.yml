@@ -31,7 +31,7 @@ jobs:
           # The remote shell argument
           # rsh: # optional, default is 
           # The local path
-          path: /build # optional, default is 
+          path: ./build/ # optional, default is 
           # The remote path
           remote_path: /usr/share/nginx/html
           # The remote host
