@@ -45,5 +45,5 @@ jobs:
           # The remote key passphrase
           # remote_key_pass: # optional, default is 
           # The remote password'
-          # remote_password: # optional, default is 
+          remote_password: ${{ secrets.SERVER_PASSWD }} # optional, default is 
             
