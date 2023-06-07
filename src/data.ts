@@ -7,7 +7,7 @@ export const category = [
   { title: "RSS", path: "rss" },
 ];
 
-// 测试actions
+// 测试github actions
 export const video = [
   {
     name: "一九四二", // 片名
@@ -290,7 +290,8 @@ export const book = [
   },
   {
     name: "哲学的故事", // 书名
-    source: "/books/哲学的故事【让深奥的哲学立刻生动起来上市首年连续再版22次，迅速译成18种语言，掀起全球哲学热潮】 (威尔•杜兰特 (Will Durant)) (Z-Library).epub", // 资源地址
+    source:
+      "/books/哲学的故事【让深奥的哲学立刻生动起来上市首年连续再版22次，迅速译成18种语言，掀起全球哲学热潮】 (威尔•杜兰特 (Will Durant)) (Z-Library).epub", // 资源地址
     cover: "/covers/哲学的故事.jpg", // 封面
     score: "88", // 评分
     details: {
@@ -305,12 +306,13 @@ export const book = [
       binding: "平装", // 装帧
       series: "", // 丛书
       ISBN: "9787513306331", // 编号
-      originalTitle: 'The Story of Philosophy'
+      originalTitle: "The Story of Philosophy",
     },
   },
   {
     name: "写作是门手艺", // 书名
-    source: "/books/The Craft of Writing 写作是门手艺 (刘军强) (Z-Library).epub", // 资源地址
+    source:
+      "/books/The Craft of Writing 写作是门手艺 (刘军强) (Z-Library).epub", // 资源地址
     cover: "/covers/写作是门手艺.jpg", // 封面
     score: "91", // 评分
     details: {
@@ -329,7 +331,8 @@ export const book = [
   },
   {
     name: "And Then There Were None", // 书名
-    source: "/books/And Then There Were None (Agatha Christie) (Z-Library).epub", // 资源地址
+    source:
+      "/books/And Then There Were None (Agatha Christie) (Z-Library).epub", // 资源地址
     cover: "/covers/无人生还.jpg", // 封面
     score: "100", // 评分
     details: {
