@@ -6,7 +6,7 @@ export default {
   build: {
     outDir: 'build',
     manifest: true,
-    target: 'es2020',
+    target: 'es2016',
     rollupOptions: {
       output: {
         chunkFileNames: 'assets/[name].js',
