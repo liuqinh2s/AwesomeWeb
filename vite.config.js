@@ -8,6 +8,9 @@ export default {
     manifest: true,
     target: 'esnext',
     rollupOptions: {
+      input: {
+        index: './src/index.tsx', // Path to your main entry file
+      },
       output: {
         chunkFileNames: 'assets/[name].js',
         entryFileNames: 'assets/[name].js',
