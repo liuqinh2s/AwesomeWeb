@@ -5,7 +5,7 @@
   "description": "React TypeScript on Replit, using Vite bundler",
   "scripts": {
     "dev": "vite --host",
-    "build": "tsc --jsx react && vite build",
+    "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "keywords": [],
