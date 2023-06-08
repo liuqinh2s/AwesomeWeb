@@ -1,12 +1,12 @@
-import react from '@vitejs/plugin-react';
+// import react from '@vitejs/plugin-react';
 
 export default {
-  plugins: [react()],
+  // plugins: [react()],
   base: './',
   build: {
     outDir: 'build',
-    manifest: true,
-    target: 'es2016',
+    // manifest: true,
+    target: 'es2015',
     rollupOptions: {
       output: {
         chunkFileNames: 'assets/[name].js',
