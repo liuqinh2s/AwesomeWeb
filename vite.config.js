@@ -6,7 +6,7 @@ export default {
   build: {
     outDir: 'build',
     // manifest: true,
-    target: 'es2015',
+    target: 'esnext',
     rollupOptions: {
       output: {
         chunkFileNames: 'assets/[name].js',
@@ -15,7 +15,7 @@ export default {
         manualChunks: {},
       },
     },
-    minify: 'esbuild',
+    minify: false,
   },
   css: {
     preprocessorOptions: {
