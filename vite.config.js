@@ -4,6 +4,11 @@ export default {
   plugins: [react()],
   base: './',
   build: {
+    lib: {
+      entry: './src/index.tsx',
+      formats: 'es',
+      fileName: 'index.js'
+    },
     outDir: 'build',
     manifest: true,
     target: 'esnext',
