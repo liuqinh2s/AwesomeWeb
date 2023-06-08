@@ -12,10 +12,10 @@ export default {
         chunkFileNames: 'assets/[name].js',
         entryFileNames: 'assets/[name].js',
         assetFileNames: 'assets/[name].[ext]',
-        manualChunks: {},
+        // manualChunks: {},
       },
     },
-    minify: false,
+    minify: 'esbuild',
   },
   css: {
     preprocessorOptions: {
