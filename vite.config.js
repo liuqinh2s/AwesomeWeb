@@ -1,18 +1,18 @@
-// import react from '@vitejs/plugin-react';
+import react from '@vitejs/plugin-react';
 
 export default {
-  // plugins: [react()],
+  plugins: [react()],
   base: './',
   build: {
     outDir: 'build',
-    // manifest: true,
+    manifest: true,
     target: 'esnext',
     rollupOptions: {
       output: {
         chunkFileNames: 'assets/[name].js',
         entryFileNames: 'assets/[name].js',
         assetFileNames: 'assets/[name].[ext]',
-        // manualChunks: {},
+        manualChunks: {},
       },
     },
     minify: 'esbuild',
