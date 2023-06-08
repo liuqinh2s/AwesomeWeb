@@ -1,4 +1,3 @@
-import React from "react";
 import { StarsWithScore } from "../../widgets/ScoreStars/StarsWithScore";
 import { useNavigate, useParams } from "react-router-dom";
 import "./SimpleCard.less";

@@ -1,7 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { ReactReader } from "react-reader";
-import { useParams } from "react-router-dom";
-import { book } from "../../data";
 
 interface IEBook {
   source: string; // 资源地址

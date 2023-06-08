@@ -1,4 +1,3 @@
-import React from "react";
 import { Video } from "../../interface";
 import { StarsWithScore } from "../../widgets/ScoreStars/StarsWithScore";
 import "./VideoCard.less";

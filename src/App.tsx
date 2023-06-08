@@ -1,11 +1,5 @@
 import "./App.css";
-import React from "react";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
-import { Video } from "./components/Video/Video";
-import { EBook } from "./components/EBook/EBook";
-import { SimpleCard } from "./components/Card/SimpleCard";
-import { VideoCard } from "./components/Card/VideoCard";
-import { CategoryBar } from "./components/CategoryBar/CategoryBar";
 import { VideoPage } from "./views/VideoPage/VideoPage";
 import { BookPage } from "./views/BookPage/BookPage";
 import { HomePage } from "./views/HomePage/HomePage";

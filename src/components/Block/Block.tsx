@@ -1,4 +1,3 @@
-import React from "react";
 import { ISimpleCard, SimpleCard } from "../Card/SimpleCard";
 import "./Block.less";
 

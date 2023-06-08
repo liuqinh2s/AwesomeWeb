@@ -1,4 +1,3 @@
-import React from "react";
 import { CategoryBar } from "../../components/CategoryBar/CategoryBar";
 import { Block } from "../../components/Block/Block";
 import { useParams } from "react-router-dom";

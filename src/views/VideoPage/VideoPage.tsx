@@ -1,4 +1,3 @@
-import React from "react";
 import { VideoCard } from "../../components/Card/VideoCard";
 import { Video } from "../../components/Video/Video";
 import { video, category } from "../../data";

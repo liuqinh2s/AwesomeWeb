@@ -1,4 +1,3 @@
-import React from "react";
 import { useParams } from "react-router-dom";
 import { book, category } from "../../data";
 import { CategoryBar } from "../../components/CategoryBar/CategoryBar";

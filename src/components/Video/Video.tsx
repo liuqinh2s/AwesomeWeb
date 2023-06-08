@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Hls from "hls.js";
 
 interface IVideo {
