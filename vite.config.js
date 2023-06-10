@@ -2,7 +2,7 @@ import react from '@vitejs/plugin-react';
 
 export default {
   plugins: [react()],
-  base: './',
+  // base: './',
   build: {
     lib: {
       entry: './src/index.tsx',
