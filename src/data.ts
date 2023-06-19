@@ -435,6 +435,26 @@ export const book = [
       ISBN: "9787505746367", // 编号
     },
   },
+  {
+    name: "Harry Potter and the Sorcerer's Stone", // 书名
+    source:
+      "/books/Harry Potter and the Sorcerers Stone (J.K. Rowling) (Z-Library).epub", // 资源地址
+    cover: "/covers/哈利波特与魔法石.jpg", // 封面
+    score: "74", // 评分
+    details: {
+      author: ["J·K·Rowling"], // 作者
+      publisher: "Arthur A. Levine Books", // 出版社
+      producer: ["Children's ed"], // 出品方
+      translator: "", // 译者
+      subTitle: "", // 副标题
+      date: "1998", // 出版日期
+      pageNumber: 309, // 页数
+      price: "56.00元", // 定价
+      binding: "平装", // 装帧
+      series: "Harry Potter #1", // 丛书
+      ISBN: "9780590353403", // 编号
+    },
+  },
 ];
 
 export const music = [
