@@ -336,6 +336,25 @@ export const video = [
 
 export const book = [
   {
+    name: "UNIX编程艺术", // 书名
+    source: "/books/UNIX编程艺术 (【美】理曼德 (Raymond E.S.)) (Z-Library).epub", // 资源地址
+    cover: "/covers/Unix编程艺术.jpg", // 封面
+    score: "90", // 评分
+    details: {
+      author: ["[美国] Eric S·Raymond"], // 作者
+      producer: ["博文视点"], // 出品方
+      publisher: "电子工业出版社", // 出版社
+      translator: "姜宏 / 何源 / 蔡晓俊", // 译者
+      subTitle: "", // 副标题
+      date: "2006-2", // 出版日期
+      pageNumber: 525, // 页数
+      price: "59.00元", // 定价
+      binding: "平装", // 装帧
+      series: "", // 丛书
+      ISBN: "9787121021169", // 编号
+    },
+  },
+  {
     name: "尼安德特人", // 书名
     source: "/books/尼安德特人 (斯万特·帕博) (Z-Library).epub", // 资源地址
     cover: "/covers/尼安德特人.jpg", // 封面
