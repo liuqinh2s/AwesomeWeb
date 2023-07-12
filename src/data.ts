@@ -336,6 +336,25 @@ export const video = [
 
 export const book = [
   {
+    name: "可能性的艺术", // 书名
+    source: "/books/可能性的艺术：比较政治学30讲（学者刘瑜比较政治学新著，跳出现象，通过比较洞察政治，突破认知偏见，在浩瀚的可能性中理解我们自身 理想国... (Z-Library).epub", // 资源地址
+    cover: "/covers/可能性的艺术.jpg", // 封面
+    score: "91", // 评分
+    details: {
+      author: ["刘瑜"], // 作者
+      producer: ["理想国"], // 出品方
+      publisher: "广西师范大学出版社", // 出版社
+      translator: "", // 译者
+      subTitle: "比较政治学30讲", // 副标题
+      date: "2022-4", // 出版日期
+      pageNumber: 384, // 页数
+      price: "82.00元", // 定价
+      binding: "精装", // 装帧
+      series: "", // 丛书
+      ISBN: "9787559848048", // 编号
+    },
+  },
+  {
     name: "UNIX编程艺术", // 书名
     source: "/books/UNIX编程艺术 (【美】理曼德 (Raymond E.S.)) (Z-Library).epub", // 资源地址
     cover: "/covers/Unix编程艺术.jpg", // 封面
