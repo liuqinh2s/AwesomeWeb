@@ -356,6 +356,25 @@ export const video = [
 
 export const book = [
   {
+    name: "程序员修炼之道（第2版）", // 书名
+    source: "/books/程序员修炼之道：通向务实的最高境界（第2版） ((美）David Thomas（大卫·托马斯），Andrew Hunt（安德鲁·亨特）) (Z-Library).epub", // 资源地址
+    cover: "/covers/程序员修炼之道.jpg", // 封面
+    score: "92", // 评分
+    details: {
+      author: ["[美] David Thomas / [美] Andrew Hunt"], // 作者
+      producer: ["博文视点"], // 出品方
+      publisher: "电子工业出版社", // 出版社
+      translator: "云风", // 译者
+      subTitle: "通向务实的最高境界", // 副标题
+      date: "2020-4-1", // 出版日期
+      pageNumber: 344, // 页数
+      price: "89.00元", // 定价
+      binding: "平装", // 装帧
+      series: "", // 丛书
+      ISBN: "9787121384356", // 编号
+    },
+  },
+  {
     name: "可能性的艺术", // 书名
     source: "/books/可能性的艺术：比较政治学30讲（学者刘瑜比较政治学新著，跳出现象，通过比较洞察政治，突破认知偏见，在浩瀚的可能性中理解我们自身 理想国... (Z-Library).epub", // 资源地址
     cover: "/covers/可能性的艺术.jpg", // 封面
