@@ -356,6 +356,25 @@ export const video = [
 
 export const book = [
   {
+    name: "悲剧的诞生", // 书名
+    source: "/books/尼采著作集九册 (弗里德里希·尼采) (Z-Library).epub", // 资源地址
+    cover: "/covers/尼采著作集九册.jpg", // 封面
+    score: "92", // 评分
+    details: {
+      author: ["[德]弗里德里希·尼采 著"], // 作者
+      producer: [""], // 出品方
+      publisher: "上海人民出版社", // 出版社
+      translator: "孙周兴 等译", // 译者
+      subTitle: "", // 副标题
+      date: "2018-6", // 出版日期
+      pageNumber: 381, // 页数
+      price: "52.00元", // 定价
+      binding: "精装", // 装帧
+      series: "", // 丛书
+      ISBN: "9787208150188", // 编号
+    },
+  },
+  {
     name: "程序员修炼之道（第2版）", // 书名
     source: "/books/程序员修炼之道：通向务实的最高境界（第2版） ((美）David Thomas（大卫·托马斯），Andrew Hunt（安德鲁·亨特）) (Z-Library).epub", // 资源地址
     cover: "/covers/程序员修炼之道.jpg", // 封面
