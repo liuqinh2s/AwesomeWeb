@@ -356,22 +356,41 @@ export const video = [
 
 export const book = [
   {
-    name: "悲剧的诞生", // 书名
-    source: "/books/尼采著作集九册 (弗里德里希·尼采) (Z-Library).epub", // 资源地址
-    cover: "/covers/尼采著作集九册.jpg", // 封面
+    name: "Life after Capitalism. The Meaning of Wealth, the Future of the Economy, and the Time Theory of Money", // 书名
+    source: "/books/Life after Capitalism. The Meaning of Wealth, the Future of the Economy, and the Time Theory of Money (George Gilder) (Z-Library).epub", // 资源地址
+    cover: "/covers/后资本主义时代的生活：财富的意义、经济的未来和时间货币理论.jpg", // 封面
+    score: "90", // 评分
+    details: {
+      author: ["George Gilder"], // 作者
+      producer: [""], // 出品方
+      publisher: "Regnery Gateway", // 出版社
+      translator: "孙周兴 等译", // 译者
+      subTitle: "The Meaning of Wealth, the Future of the Economy, and the Time Theory of Money", // 副标题
+      date: "2023-6-18", // 出版日期
+      pageNumber: 256, // 页数
+      price: "USD 29.99", // 定价
+      binding: "Hardcover", // 装帧
+      series: "", // 丛书
+      ISBN: "9781684512249", // 编号
+    },
+  },
+  {
+    name: "程序员修炼之道（第2版）", // 书名
+    source: "/books/程序员修炼之道：通向务实的最高境界（第2版） ((美）David Thomas（大卫·托马斯），Andrew Hunt（安德鲁·亨特）) (Z-Library).epub", // 资源地址
+    cover: "/covers/程序员修炼之道.jpg", // 封面
     score: "92", // 评分
     details: {
-      author: ["[德]弗里德里希·尼采 著"], // 作者
-      producer: [""], // 出品方
-      publisher: "上海人民出版社", // 出版社
-      translator: "孙周兴 等译", // 译者
-      subTitle: "", // 副标题
-      date: "2018-6", // 出版日期
-      pageNumber: 381, // 页数
-      price: "52.00元", // 定价
-      binding: "精装", // 装帧
+      author: ["[美] David Thomas / [美] Andrew Hunt"], // 作者
+      producer: ["博文视点"], // 出品方
+      publisher: "电子工业出版社", // 出版社
+      translator: "云风", // 译者
+      subTitle: "通向务实的最高境界", // 副标题
+      date: "2020-4-1", // 出版日期
+      pageNumber: 344, // 页数
+      price: "89.00元", // 定价
+      binding: "平装", // 装帧
       series: "", // 丛书
-      ISBN: "9787208150188", // 编号
+      ISBN: "9787121384356", // 编号
     },
   },
   {
