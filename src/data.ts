@@ -356,22 +356,22 @@ export const video = [
 
 export const book = [
   {
-    name: "Life after Capitalism. The Meaning of Wealth, the Future of the Economy, and the Time Theory of Money", // 书名
-    source: "/books/Life after Capitalism. The Meaning of Wealth, the Future of the Economy, and the Time Theory of Money (George Gilder) (Z-Library).epub (Translated).epub", // 资源地址
-    cover: "/covers/后资本主义时代的生活：财富的意义、经济的未来和时间货币理论.jpg", // 封面
-    score: "90", // 评分
+    name: "黑客与画家", // 书名
+    source: "/books/黑客与画家 硅谷创业之父Paul Graham文集 ([美] 保罗·格雷厄姆) (Z-Library).epub (Translated).epub", // 资源地址
+    cover: "/covers/黑客与画家.jpg", // 封面
+    score: "87", // 评分
     details: {
-      author: ["George Gilder"], // 作者
-      producer: [""], // 出品方
-      publisher: "Regnery Gateway", // 出版社
-      translator: "孙周兴 等译", // 译者
-      subTitle: "The Meaning of Wealth, the Future of the Economy, and the Time Theory of Money", // 副标题
-      date: "2023-6-18", // 出版日期
-      pageNumber: 256, // 页数
-      price: "USD 29.99", // 定价
-      binding: "Hardcover", // 装帧
+      author: ["保罗·格雷厄姆"], // 作者
+      producer: ["图灵教育"], // 出品方
+      publisher: "人民邮电出版社", // 出版社
+      translator: "阮一峰", // 译者
+      subTitle: "硅谷创业之父Paul Graham文集", // 副标题
+      date: "2011-4", // 出版日期
+      pageNumber: 264, // 页数
+      price: "49.00元", // 定价
+      binding: "平装", // 装帧
       series: "", // 丛书
-      ISBN: "9781684512249", // 编号
+      ISBN: "9787115249494", // 编号
     },
   },
   {
