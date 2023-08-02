@@ -11,7 +11,7 @@ export const category = [
 export const video = [
   {
     name: "白日梦想家", // 片名
-    source: "https://v4.cdtlas.com/20220531/pm3QPmvK/1000kb/hls/index.m3u8", // 播放源
+    source: "https://b1.szjal.cn/ppvod/A75BBA066BCB1C81639FB51DE24C914F.m3u8", // 播放源
     cover: "/covers/白日梦想家.jpeg", // 封面
     score: "86", // 评分
     details: {
