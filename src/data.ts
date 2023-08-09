@@ -397,7 +397,7 @@ export const video = [
 export const book = [
   {
     name: "UNIX环境高级编程（第3版）", // 书名
-    source: "/books/UNIX環境高級編程(第3版) (Advanced Programming in the UNIX Environment, 3rd Edition) (史蒂文斯 (W. Richard Stevens), Stephen Rago) (Z-Library).epub", // 资源地址
+    source: "/books/UNIX环境高级编程 (W. Richard Stevens, Stephen A. Rago) (Z-Library).epub", // 资源地址
     cover: "/covers/APUE.jpg", // 封面
     score: "97", // 评分
     details: {
