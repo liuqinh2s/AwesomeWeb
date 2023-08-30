@@ -1,12 +1,14 @@
-import React, {useState} from 'react';
-import { Document, Page } from 'react-pdf';
+import React, { useState } from 'react';
+import { Document, Page, pdfjs } from 'react-pdf';
 
 interface IEBook {
   source: string; // 资源地址
 }
 
-export const PDFPreview = (props: IEBook)=> {
-  const {source} = props;
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
+
+export const PDFPreview = (props: IEBook) => {
+  const { source } = props;
   const [numPages, setNumPages] = useState<number>();
   const [pageNumber, setPageNumber] = useState<number>(1);
 
