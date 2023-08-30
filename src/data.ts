@@ -396,6 +396,25 @@ export const video = [
 
 export const book = [
   {
+    name: "UNIX环境高级编程（第3版 英文pdf）", // 书名
+    source: "/books/Advanced Programming in the UNIX® Environment (W. Richard Stevens  Stephen A. Rago [Stevens etc.) (Z-Library).pdf", // 资源地址
+    cover: "/covers/APUE-en.jpg", // 封面
+    score: "97", // 评分
+    details: {
+      author: ["史蒂文斯 (W.Richard Stevens) / 拉戈 (Stephen A.Rago)"], // 作者
+      producer: ["异步图书"], // 出品方
+      publisher: "人民邮电出版社", // 出版社
+      translator: "", // 译者
+      subTitle: "", // 副标题
+      date: "2014-6-1", // 出版日期
+      pageNumber: 812, // 页数
+      price: "128.00元", // 定价
+      binding: "平装", // 装帧
+      series: "", // 丛书
+      ISBN: "9787115352118", // 编号
+    },
+  },
+  {
     name: "UNIX环境高级编程（第3版）", // 书名
     source: "/books/UNIX环境高级编程 (W. Richard Stevens, Stephen A. Rago) (Z-Library).epub", // 资源地址
     cover: "/covers/APUE.jpg", // 封面
