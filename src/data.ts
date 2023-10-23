@@ -643,6 +643,7 @@ export const game = [{
   name: "SudoKu", // 游戏名
   source: "https://jujuxi.xyz/sudoku", // 资源地址
   score: "100", // 评分
+  cover: '/covers/SudoKu.jpg',
   details: {
     author: ['liuqinh2s'], // 作者
     date: "2023-10-23", // 日期
