@@ -1,7 +1,7 @@
 import { CategoryBar } from "../../components/CategoryBar/CategoryBar";
 import { Block } from "../../components/Block/Block";
 import { useParams } from "react-router-dom";
-import { video, book, category } from "../../data";
+import { video, book, game, category } from "../../data";
 
 export const HomePage = () => {
   const params = useParams();
@@ -13,6 +13,8 @@ export const HomePage = () => {
         return video;
       case "ebook":
         return book;
+      case "game":
+        return game;
       default:
         return [];
     }
@@ -32,6 +34,8 @@ export const HomePage = () => {
         return 4;
       case "rss":
         return 5;
+      case "game":
+        return 6;
       default:
         return 0;
     }

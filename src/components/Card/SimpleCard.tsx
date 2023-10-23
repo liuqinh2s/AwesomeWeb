@@ -14,6 +14,7 @@ export const SimpleCard = (props: ISimpleCard) => {
   const navigate = useNavigate();
   const param = useParams();
   const handleClick = () => {
+    console.log(param)
     navigate("/" + (param.id || "video") + "/" + id);
   };
   return (

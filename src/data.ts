@@ -5,6 +5,7 @@ export const category = [
   { title: "图片", path: "picture" },
   { title: "文章", path: "article" },
   { title: "RSS", path: "rss" },
+  { title: "游戏", path: "game" },
 ];
 
 // 测试github actions7
@@ -637,3 +638,13 @@ export const image = [
     },
   },
 ];
+
+export const game = [{
+  name: "SudoKu", // 游戏名
+  source: "https://jujuxi.xyz/sudoku", // 资源地址
+  score: "100", // 评分
+  details: {
+    author: ['liuqinh2s'], // 作者
+    date: "2023-10-23", // 日期
+  },
+},];
