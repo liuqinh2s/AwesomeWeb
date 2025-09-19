@@ -1,5 +1,5 @@
 const path = require("path");
-const CopyPlugin = require('copy-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.tsx",
@@ -19,30 +19,29 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           {
-            loader: 'esbuild-loader',
+            loader: "esbuild-loader",
             options: {
-              loader: 'tsx', // 如果使用React的JSX语法，请指定'jsx'作为loader选项
-              target: 'es2017' // 指定目标JavaScript版本
-            }
-          }]
+              loader: "tsx", // 如果使用React的JSX语法，请指定'jsx'作为loader选项
+              target: "es2017", // 指定目标JavaScript版本
+            },
+          },
+        ],
       },
       // Less 文件的规则
       {
         test: /\.(css|less|sass)$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'less-loader',
-        ],
+        use: ["style-loader", "css-loader", "less-loader"],
       },
     ],
   },
   plugins: [
     new CopyPlugin({
       patterns: [
-        { from: path.resolve(__dirname, "public"), to: path.resolve(__dirname, "build") },
+        {
+          from: path.resolve(__dirname, "public"),
+          to: path.resolve(__dirname, "build"),
+        },
       ],
     }),
   ],
-
 };
