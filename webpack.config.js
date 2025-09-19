@@ -46,9 +46,10 @@ module.exports = {
         },
       ],
     }),
-    // new HtmlWebpackPlugin({
-    //   template: "./index.html", // 指定你的HTML模板
-    //   // 其他配置...
-    // }),
+    new HtmlWebpackPlugin({
+      template: "./index.html", // 指定你现有的 index.html 作为模板
+      filename: "index.html", // 生成的 HTML 文件名，通常保持不变
+      // 其他配置...
+    }),
   ],
 };
