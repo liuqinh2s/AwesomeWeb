@@ -14,6 +14,9 @@ export const EBook = (props: IEBook) => {
       return <Epub source={source}></Epub>
     }else if(source.endsWith('.pdf')){
       window.open(`https://${document.location.host}`+source)
+      return <></>
+    } else {
+      return <></>
     }
   }
   return html();
