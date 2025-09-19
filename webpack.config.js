@@ -1,13 +1,14 @@
 const path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin"); // 确保已安装 html-webpack-plugin
 
 module.exports = {
   entry: "./src/index.tsx",
   output: {
     filename: "index.js",
     path: path.resolve(__dirname, "build"),
-    // 公共路径，非常重要，决定了打包后资源的引用基础 URL
-    publicPath: "./AwesomeWeb/",
+    clean: true,
+    publicPath: "/AwesomeWeb/",
   },
   resolve: {
     // Add '.ts' and '.tsx' as resolvable extensions.
@@ -45,5 +46,9 @@ module.exports = {
         },
       ],
     }),
+    // new HtmlWebpackPlugin({
+    //   template: "./index.html", // 指定你的HTML模板
+    //   // 其他配置...
+    // }),
   ],
 };
