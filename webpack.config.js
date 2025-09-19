@@ -6,6 +6,8 @@ module.exports = {
   output: {
     filename: "index.js",
     path: path.resolve(__dirname, "build"),
+    // 公共路径，非常重要，决定了打包后资源的引用基础 URL
+    publicPath: "./",
   },
   resolve: {
     // Add '.ts' and '.tsx' as resolvable extensions.
