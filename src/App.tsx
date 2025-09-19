@@ -7,7 +7,6 @@ import { MusicPage } from "./views/MusicPage/MusicPage";
 import { GamePage } from "./views/GamePage/GamePage";
 
 export default function App() {
-  console.log('liuqin');
   return (
     <>
       <BrowserRouter>
