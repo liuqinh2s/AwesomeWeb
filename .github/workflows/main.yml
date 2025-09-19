@@ -1,49 +1,29 @@
-name: Deploy
+name: deploying project to GitHub pages
 on:
   push:
     branches:
-      - main  # 只在master上push触发部署
-    paths-ignore: # 下列文件的变更不触发部署
-      - README.md
-      - LICENSE
+      - master # master 分支有 push 行为时就触发这个 action
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest # 使用ubuntu系统镜像运行自动化脚本
-    steps: # 自动化步骤
-      - name: Checkout  # 第一步，下载代码仓库
-        uses: actions/checkout@v3
-      - name: Set up Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: 'npm'
-      - name: Install dependencies
-        run: npm install
-      - name: Build
-        run: npm run build
-      - name: Rsync Deployments Action with ssh key and password
-  # You may pin to the exact commit or the version.
-  # uses: kroominator/rsync-deployments-simply-com@5ce1980093ab6c6f91683022597ebb0fce68c620
-        uses: kroominator/rsync-deployments-simply-com@5.2.2
-        with:
-          # The switches
-          switches: -avzr --delete
-          # The remote shell argument
-          # rsh: # optional, default is 
-          # The local path
-          path: ./build/ # optional, default is 
-          # The remote path
-          remote_path: /usr/share/nginx/html
-          # The remote host
-          remote_host: ${{ secrets.SERVER_HOST }}
-          # The remote port
-          remote_port: ${{ secrets.SERVER_PORT }} # optional, default is 22
-          # The remote user
-          remote_user: ${{ secrets.SERVER_USER }}
-          # The remote key
-          remote_key: ${{ secrets.SERVER_KEY }}
-          # The remote key passphrase
-          # remote_key_pass: # optional, default is 
-          # The remote password'
-          remote_password: ${{ secrets.SERVER_PASSWD }} # optional, default is 
-            
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout 🛎️
+      uses: actions/checkout@master
+      
+    - name: Use Node.js 12
+      uses: actions/setup-node@v2-beta
+      with:
+        node-version: '22.18.0'
+        
+    - name: Install and Build 🔧 
+      run: |
+        npm install
+        npm run build
+
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@3.7.1
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: docs
+        BASE_BRANCH: master
