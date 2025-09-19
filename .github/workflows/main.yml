@@ -6,6 +6,9 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    # 添加以下 permissions 配置，授予写入权限
+    permissions:
+      contents: write
     steps:
     - name: Checkout 🛎️
       uses: actions/checkout@master
