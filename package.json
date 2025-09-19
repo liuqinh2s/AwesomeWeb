@@ -4,7 +4,7 @@
   "description": "AwesomeWeb",
   "scripts": {
     "dev": "vite --host",
-    "build": "webpack --mode=production --progress",
+    "build": "tsc --noEmit && vite build",
     "preview": "vite preview"
   },
   "keywords": [],
