@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import { VideoPage } from "./views/VideoPage/VideoPage";
 import { BookPage } from "./views/BookPage/BookPage";
 import { HomePage } from "./views/HomePage/HomePage";
@@ -10,7 +10,7 @@ import { basePath } from "./const";
 export default function App() {
   return (
     <>
-      <BrowserRouter basename={basePath}>
+      <HashRouter basename={basePath}>
         <Routes>
           <Route path="/" element={<HomePage></HomePage>} />
           <Route path="/:id" element={<HomePage></HomePage>} />
@@ -23,7 +23,7 @@ export default function App() {
         {/* <SimpleCard name={'刻在你心底的名字'} cover={"https://pic.rmb.bdstatic.com/bjh/4092b755ca751ae195a4f6635a041843.jpeg"} score={60}></SimpleCard> */}
         {/* <Video></Video>
       <EBook></EBook> */}
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
