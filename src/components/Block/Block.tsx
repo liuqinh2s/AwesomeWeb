@@ -1,3 +1,4 @@
+import { basePath } from "../../const";
 import { ISimpleCard, SimpleCard } from "../Card/SimpleCard";
 import "./Block.less";
 
@@ -14,7 +15,7 @@ export const Block = (props: IBlock) => {
         <div key={i} className="card-wrap">
           <SimpleCard
             name={data[i].name}
-            cover={data[i].cover}
+            cover={basePath+data[i].cover}
             score={data[i].score}
             id={i + ""}
           ></SimpleCard>

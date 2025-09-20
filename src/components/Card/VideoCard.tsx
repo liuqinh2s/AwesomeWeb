@@ -1,3 +1,4 @@
+import { basePath } from "../../const";
 import { Video } from "../../interface";
 import { StarsWithScore } from "../../widgets/ScoreStars/StarsWithScore";
 import "./VideoCard.less";
@@ -21,7 +22,7 @@ export const VideoCard = (props: IVideoCard) => {
       <div className="video-card">
         <img
           style={{ width: "40%", display: "block", paddingRight: "10px" }}
-          src={cover}
+          src={basePath + cover}
         ></img>
         <div className="info">
           <div>
