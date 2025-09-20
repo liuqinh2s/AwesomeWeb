@@ -4,8 +4,11 @@
   "description": "AwesomeWeb",
   "scripts": {
     "dev": "vite --host",
-    "build": "webpack --mode=production --progress",
+    "build": "tsc --noEmit && vite build",
     "preview": "vite preview"
+  },
+  "resolutions": {
+    "rollup": "4.50.0"
   },
   "keywords": [],
   "author": "",
@@ -32,10 +35,7 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
-    "@react-pdf/renderer": "^3.1.12",
     "hls.js": "^1.4.4",
-    "react-jinke-music-player": "^4.24.2",
-    "react-pdf": "^7.3.3",
-    "react-player": "^2.12.0"
+    "vite-plugin-commonjs": "^0.10.4"
   }
 }

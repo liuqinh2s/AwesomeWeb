@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ReactReader } from "react-reader";
+// const {ReactReader} = require("react-reader")
 
 interface IEBook {
   source: string; // 资源地址
@@ -15,11 +15,11 @@ export const Epub = (props: IEBook) => {
   };
   return (
     <div style={{ height: "100vh" }}>
-      <ReactReader
+      {/* <ReactReader
         location={location as any}
         locationChanged={locationChanged}
         url={source}
-      />
+      /> */}
     </div>
   );
 };
