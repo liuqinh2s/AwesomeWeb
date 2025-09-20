@@ -1,1 +1,1 @@
-export const basePath = '/AwesomeWeb'
+export const basePath = '.'

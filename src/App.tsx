@@ -5,12 +5,11 @@ import { BookPage } from "./views/BookPage/BookPage";
 import { HomePage } from "./views/HomePage/HomePage";
 import { MusicPage } from "./views/MusicPage/MusicPage";
 import { GamePage } from "./views/GamePage/GamePage";
-import { basePath } from "./const";
 
 export default function App() {
   return (
     <>
-      <BrowserRouter basename={basePath}>
+      <BrowserRouter basename={"/AwesomeWeb"}>
         <Routes>
           <Route path="/" element={<HomePage></HomePage>} />
           <Route path="/:id" element={<HomePage></HomePage>} />
