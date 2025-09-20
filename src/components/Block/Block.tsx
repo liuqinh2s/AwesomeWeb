@@ -15,7 +15,7 @@ export const Block = (props: IBlock) => {
         <div key={i} className="card-wrap">
           <SimpleCard
             name={data[i].name}
-            cover={basePath+data[i].cover}
+            cover={data[i].cover}
             score={data[i].score}
             id={i + ""}
           ></SimpleCard>
