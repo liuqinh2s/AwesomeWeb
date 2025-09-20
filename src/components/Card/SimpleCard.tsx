@@ -1,7 +1,6 @@
 import { StarsWithScore } from "../../widgets/ScoreStars/StarsWithScore";
 import { useNavigate, useParams } from "react-router-dom";
 import "./SimpleCard.less";
-import { basePath } from "../../const";
 
 export interface ISimpleCard {
   id: string; // id
@@ -23,7 +22,7 @@ export const SimpleCard = (props: ISimpleCard) => {
       <div className="simple-card">
         <img
           className="cover"
-          src={basePath + cover}
+          src={cover}
           onClick={() => {
             handleClick();
           }}

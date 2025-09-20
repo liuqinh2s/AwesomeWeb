@@ -1,4 +1,3 @@
-import { basePath } from "../../const";
 import { ISimpleCard, SimpleCard } from "../Card/SimpleCard";
 import "./Block.less";
 

@@ -1,3 +1,5 @@
+import { basePath } from "./const";
+
 export const category = [
   { title: "视频", path: "video" },
   { title: "电子书", path: "ebook" },
@@ -393,7 +395,9 @@ export const video = [
         "琪琪今年13岁了，按照魔法界的规矩，魔法少女年满13岁就要出外进行为期一年的修行。所以琪琪带着宠物黑猫吉吉踏上了修行之旅。然而，修行之旅开始得并不顺利，当琪琪来到海边一座大城市时，人们并没有欢迎她的到来，人人都不搭理她。幸亏琪琪有一颗善良的心，当她拾到了一件别人的失物时，热心的琪琪找到了失主。她的善良赢得了面包店老板娘的好感，琪琪就在面包店开始了她用飞行魔法为客人服务的快递业务。琪琪很快适应了新环境，一次，一个热衷于飞机制造的男孩邀请琪琪去参加飞行俱乐部的聚会，途中琪琪因为帮一位老大娘送东西而被雨淋了。从此，琪琪突然发现自己的魔法正在一天天变弱。", // 剧情简介
     },
   },
-];
+].map(x => {
+  return { ...x, cover: basePath + x.cover }
+})
 
 export const book = [
   {
@@ -611,7 +615,9 @@ export const book = [
       ISBN: "9780590353403", // 编号
     },
   },
-];
+].map(x => {
+  return { ...x, cover: basePath + x.cover }
+})
 
 export const music = [
   {
@@ -625,7 +631,9 @@ export const music = [
       date: "", // 日期
     },
   },
-];
+].map(x => {
+  return { ...x, cover: basePath + x.cover }
+})
 
 export const image = [
   {
@@ -641,11 +649,13 @@ export const image = [
 
 export const game = [{
   name: "SudoKu", // 游戏名
-  source: "https://jujuxi.xyz/sudoku", // 资源地址
+  source: "https://liuqinh2s.github.io/SudoKu", // 资源地址
   score: "100", // 评分
   cover: '/covers/SudoKu.jpg',
   details: {
     author: ['liuqinh2s'], // 作者
     date: "2023-10-23", // 日期
   },
-},];
+},].map(x => {
+  return { ...x, cover: basePath + x.cover }
+})
