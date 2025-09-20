@@ -9,7 +9,7 @@ import { GamePage } from "./views/GamePage/GamePage";
 export default function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/AwesomeWeb">
         <Routes>
           <Route path="/" element={<HomePage></HomePage>} />
           <Route path="/:id" element={<HomePage></HomePage>} />
